@@ -8,5 +8,4 @@ Rails.application.routes.draw do
     resources :bills, only: [:new, :create, :show]
   end
   resources :bills, only: [:index]
-  end
 end
