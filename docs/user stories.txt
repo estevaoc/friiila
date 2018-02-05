@@ -19,9 +19,10 @@ rails new \
   --database postgresql \
   --webpack \
   -m https://raw.githubusercontent.com/lewagon/rails-templates/master/devise.rb \
-  friiila	
+  friiila
 
 rails g model Place address:string place_name:string photo:string user:references
 rails g model Bill user:references place:references paid:boolean
 rails g model Item place:references price:integer product:string
 rails g model Order item:references bill:references amount:integer
+rails g migration AddCoordinatesToPlaces latitude:float longitude:float
