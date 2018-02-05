@@ -1,4 +1,7 @@
 class Place < ApplicationRecord
+  #uploader_photo_cloudnary
+  mount_uploader :photo, PhotoUploader
+
   #geocoding
   geocoded_by :address
   after_validation :geocode, if: :will_save_change_to_address?
