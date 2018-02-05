@@ -10,10 +10,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180202193208) do
+ActiveRecord::Schema.define(version: 20180202213009) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bills", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "place_id"
+    t.boolean "paid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["place_id"], name: "index_bills_on_place_id"
+    t.index ["user_id"], name: "index_bills_on_user_id"
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.bigint "place_id"
+    t.integer "price"
+    t.string "product"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["place_id"], name: "index_items_on_place_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.bigint "item_id"
+    t.bigint "bill_id"
+    t.integer "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bill_id"], name: "index_orders_on_bill_id"
+    t.index ["item_id"], name: "index_orders_on_item_id"
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.string "address"
+    t.string "place_name"
+    t.string "photo"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_places_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -32,4 +71,10 @@ ActiveRecord::Schema.define(version: 20180202193208) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "bills", "places"
+  add_foreign_key "bills", "users"
+  add_foreign_key "items", "places"
+  add_foreign_key "orders", "bills"
+  add_foreign_key "orders", "items"
+  add_foreign_key "places", "users"
 end
