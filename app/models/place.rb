@@ -1,4 +1,7 @@
 class Place < ApplicationRecord
+  #uploader_photo_cloudnary
+  mount_uploader :photo, PhotoUploader
+
   #references
   belongs_to :user
   has_many :items

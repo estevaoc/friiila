@@ -1,0 +1,20 @@
+<%= simple_form_for(@places) do |f| %>
+  <% if @user.errors.any? %>
+    <div class="errors-container">
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <%= f.label :mobile %>
+  <%= f.text_field :mobile %>
+  <%= f.label :password %>
+  <%= f.text_field :password %>
+  <%= f.submit "add a user", class: "btn btn-primary" %>
+<% end %>
