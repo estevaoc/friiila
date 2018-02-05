@@ -1,2 +1,45 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<%= content_for :title, "Friiila" %>
+
+<div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= asset_path 'estampa.jpg'%>);">
+      <div class="banner-content">
+        <h1>FRIIILA</h1>
+        <p>Livre para ir e vir</p>
+      </div>
+    </div>
+
+<div class="container">
+  <h2 class="text-center">Abrir uma conta em</h2>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url(<%= asset_path 'cerveja.jpg'%>);">
+          <div class="card-category">BH, Brasil</div>
+          <div class="card-description">
+            <h3>Budega do Jao</h3>
+            <p class="rating">
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+            </p>
+        <div class="card-footer">
+          <p>Posted on <%= 05/02/18 %></p>
+          <p> Endereço da budega</p>
+        </div>
+          </div>
+          <a href="flats/ssaunier.html" class="card-link"></a>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This page is made with <i class="fa fa-heart"></i> by Extrema
+  </div>
+</div>
+<p></p>
