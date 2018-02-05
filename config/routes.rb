@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
+  root to: 'pages#home'
+
   get 'bills/index'
 
   get 'bills/new'
@@ -13,21 +16,9 @@ Rails.application.routes.draw do
 
   get 'bills/destroy'
 
-  get 'places/index'
-
-  get 'places/new'
-
-  get 'places/create'
-
-  get 'places/edit'
-
-  get 'places/update'
-
-  get 'places/show'
-
-  get 'places/destroy'
-
-  devise_for :users
-  root to: 'pages#home'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :places do
+    collection do
+      get 'my_places', to: "places#my_places"
+    end
+  end
 end
