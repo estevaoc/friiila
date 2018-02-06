@@ -3,6 +3,11 @@
 <p><%= link_to "Nova budega", new_place_path %></p>
 <% @my_places.each do |place| %>
   <%= link_to(place) do %>
-    <h3><%= place.place_name %><%= link_to "Suma com essa budega", place_path(place), method: :delete, data: { confirm: "Que isso, tem certeza?" } %></h3>
+    <h3>
+      <%= place.place_name %>
+      <%= link_to place_path(place), method: :delete, data: { confirm: "Que isso, tem certeza?" } do %>
+        <i class="fa fa-trash-o"></i>
+      <% end %>
+    </h3>
   <% end %>
 <% end %>
