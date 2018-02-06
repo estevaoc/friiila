@@ -1,0 +1,28 @@
+As a dono_da_budega I can CRUD da budega
+As a dono_da_budega I can login/logout
+As a dono_da_budega I can add a criente code - backend valida criente code
+As a dono_da_budega I can close a code
+As a dono_da_budega I can CRUD a bill
+As a criente I can CRUD my_self
+As a criente I can login/logout
+As a criente I can recieve a code
+As a criente I can pay my bill
+As a criente I can follow my bill
+As a criente I can checkin a budega (=open a bill)
+As a criente I can search a budega
+As a criente I can share my bill - email, whatsapp
+As a criente I can view my history bills
+As a guest I can view landing page
+As a guest I can sign up
+
+rails new \
+  --database postgresql \
+  --webpack \
+  -m https://raw.githubusercontent.com/lewagon/rails-templates/master/devise.rb \
+  friiila
+
+rails g model Place address:string place_name:string photo:string user:references
+rails g model Bill user:references place:references paid:boolean
+rails g model Item place:references price:integer product:string
+rails g model Order item:references bill:references amount:integer
+rails g migration AddCoordinatesToPlaces latitude:float longitude:float
