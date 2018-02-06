@@ -1,8 +1,8 @@
 class BillsController < ApplicationController
-  before_action :set_place, only: [:create, :new, :show, :update]
+  before_action :set_place, only: [:create, :new, :show, :update, :my_open_bills]
   before_action :set_bill, only: [:update, :show]
 
-  def index
+  def index #para o cliente ver todas suas bills passadas
     @bills = current_user.bills
   end
 
@@ -29,6 +29,10 @@ class BillsController < ApplicationController
 
   def show
     @orders = @bill.orders
+  end
+
+  def my_open_bills #para a budega ver todas suas bills abertas
+    @bills = Bill.all.where(@bill.paid: false)
   end
 
   def destroy

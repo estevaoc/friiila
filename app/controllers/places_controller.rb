@@ -34,7 +34,7 @@ class PlacesController < ApplicationController
     redirect_to place_path
   end
 
-  def my_places
+  def my_places # lista as budegas do dono dessas budegas
     @my_places = Place.where(user: current_user)
   end
 
