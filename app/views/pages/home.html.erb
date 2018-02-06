@@ -1,2 +1,30 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<%= content_for :title, "Friiila" %>
+
+<div class="banner" style="background: linear-gradient(-225deg, rgba(148,73,73,0.5) 0%, rgba(0,0,0,0) 100%), url(<%= asset_path 'estampa.jpg'%>);">
+      <div class="banner-content">
+        <h1>Livre para ir e vir</h1>
+      </div>
+    </div>
+
+
+<h2 class="text-center">Criente View</h2>
+<div class="banner2" style="background: url(<%= asset_path 'telaiphone.jpg'%>);">
+</div>
+
+<h2 class="text-center">Dono da Budega View</h2>
+<div class="banner2" style="background: url(<%= asset_path 'telaiphone.jpg'%>);">
+</div>
+
+
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This page is made with <i class="fa fa-heart"></i> by Extrema
+  </div>
+</div>
+<p></p>
