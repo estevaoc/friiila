@@ -1,5 +1,12 @@
 <h1><%= @place.place_name %></h1>
 <h3><%= @place.address %></h3>
-<p><%= link_to "Ver todas minhas budegas", my_places_places_path %></p>
-<p><%= link_to "Editar essa budega", edit_place_path %></p>
+
+<% if current_user == @place.user %>
+  <p><%= link_to "Ver as minhas budegas", my_places_places_path %></p>
+  <p><%= link_to "Editar essa budega", edit_place_path %></p>
+<% end %>
+
+<p><%= link_to "Ver todas as budegas", places_path %></p>
+
 <%= cl_image_tag @place.photo %>
+
