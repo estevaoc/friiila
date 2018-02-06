@@ -1,2 +1,5 @@
-<h1>Places#show</h1>
-<p>Find me in app/views/places/show.html.erb</p>
+<h1><%= @place.place_name %></h1>
+<h3><%= @place.address %></h3>
+<p><%= link_to "Ver todas minhas budegas", my_places_places_path %></p>
+<p><%= link_to "Editar essa budega", edit_place_path %></p>
+<%= cl_image_tag @place.photo %>
