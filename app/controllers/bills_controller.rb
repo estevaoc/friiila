@@ -8,6 +8,7 @@ class BillsController < ApplicationController
 
   def new
     @bill = Bill.new
+    create
   end
 
   def create
@@ -15,7 +16,7 @@ class BillsController < ApplicationController
     @bill.user = current_user
     @bill.place = @place
     @bill.save
-    redirect_to bill_path(@bill)
+    redirect_to place_bill_path(@place, @bill)
   end
 
   def edit
