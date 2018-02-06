@@ -65,6 +65,8 @@ body {
     border-radius: 1px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
+    height: 240px;
+    font-family: $card-font;
 }
 
 .card-body {
@@ -74,6 +76,10 @@ body {
     position: relative;
 }
 
+.card-description {
+  font-family: $card-description-font;
+  font-size: 37px
+}
 .card-footer {
     //display: flex;
     //align-items: center;
