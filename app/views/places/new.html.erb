@@ -1,21 +1,5 @@
 <h1>Bora criar minha budega</h1>
 
-<%= simple_form_for(@place) do |f| %>
-  <% if @place.errors.any? %>
-    <div class="errors-container">
-      <ul>
-        <% @user.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <%= f.label :place_name %>
-  <%= f.text_field :place_name %>
-  <%= f.label :address %>
-  <%= f.text_field :address %>
-  <%= f.input :photo %>
-  <%= f.input :photo_cache, as: :hidden %>
-  <%= f.submit "add a budega", class: "btn btn-primary" %>
-<% end %>
+<%= render "place_form" %>
 
+<p><%= link_to "Voltar", my_places_places_path %></p>

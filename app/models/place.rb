@@ -11,7 +11,8 @@ class Place < ApplicationRecord
   has_many :items
   has_many :bills
   has_many :orders, through: :bills
+
   #validations
   validates :address, :place_name, uniqueness: { case_sensitive: false }
-  validates :address, :place_name, presence: true
+  validates :address, :place_name, :photo, presence: true
 end

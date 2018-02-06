@@ -2,7 +2,7 @@ class PlacesController < ApplicationController
   before_action :set_place, only: [:show, :edit, :update, :destroy]
 
   def index
-    @places = Place.where.not(latitude: nil, longitude: nil)
+    @places = Place.all#where.not(latitude: nil, longitude: nil)
 
     @markers = @places.map do |place|
       {
@@ -31,6 +31,7 @@ class PlacesController < ApplicationController
 
   def update
     @place.update(place_params)
+    redirect_to place_path
   end
 
   def my_places
