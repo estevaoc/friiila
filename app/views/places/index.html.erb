@@ -1,7 +1,7 @@
 <h1>Todas as budegas</h1>
 
 <% @places.each do |place| %>
-  <%= link_to(place) do %>
+  <%= link_to new_place_bill_path(place) do %>
     <h3><%= place.place_name %></h3>
   <% end %>
 <% end %>
