@@ -1,5 +1,13 @@
 <h1>Todas as budegas</h1>
 
+<%= form_tag places_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Nome ou Bairro"
+  %>
+<% end %>
+
 <% @places.each do |place| %>
   <%= link_to(place) do %>
     <h3><%= place.place_name %></h3>

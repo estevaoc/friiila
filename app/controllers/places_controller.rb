@@ -2,7 +2,11 @@ class PlacesController < ApplicationController
   before_action :set_place, only: [:show, :edit, :update, :destroy]
 
   def index
-    @places = Place.all#where.not(latitude: nil, longitude: nil)
+    if params[:query].present?
+      @places = Place.search_by_name_and_address(params[:query])
+    else
+      @places = Place.all
+    end
 
     @markers = @places.map do |place|
       {

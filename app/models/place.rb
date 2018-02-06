@@ -16,7 +16,7 @@ class Place < ApplicationRecord
   validates :address, :place_name, uniqueness: { case_sensitive: false }
   validates :address, :place_name, :photo, presence: true
 
-  # search
+  # Search Scope
   include PgSearch
   pg_search_scope :search_by_name_and_address,
     against: [ :place_name, :address ],
