@@ -1,13 +1,35 @@
-<h1>Meu Império</h1>
+<h1>Meus Lugares</h1>
 
-<p><%= link_to "Nova budega", new_place_path %></p>
-<% @my_places.each do |place| %>
-  <%= link_to(place) do %>
-    <h3>
-      <%= place.place_name %>
-      <%= link_to place_path(place), method: :delete, data: { confirm: "Que isso, tem certeza?" } do %>
-        <i class="fa fa-trash-o"></i>
-      <% end %>
-    </h3>
-  <% end %>
+<a><%= link_to new_place_path do %>
+<button type="button">Adicionar Budega</button></a>
 <% end %>
+
+<div class="row">
+  <% @my_places.each do |place| %>
+  <div class="col-md-3 col-sm-4 col-xs-12">
+    <%= link_to(place) do %>
+      <div class="card">
+        <div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('<%= cl_image_path place.photo %>')">
+          <div class="card-description">
+              <%= place.place_name %>
+          </div>
+          <a class="card-link" href="#"></a>
+        </div>
+    <%end%>
+        <div class="card-footer">
+           <p><%= place.address %>
+             <%= link_to place_path(place), method: :delete, data: { confirm: "Que isso, tem certeza?" } do %>
+        <i class="fa fa-trash-o"></i>
+        <a><%= link_to edit_place_path(place) do %>
+           <i class="fa fa-edit"></i>
+        </a>
+        </p>
+        <% end %>
+        <% end %>
+        </div>
+      </div>
+  </div>
+  <% end %>
+</div>
+
+
