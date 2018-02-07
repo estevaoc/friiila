@@ -2,7 +2,11 @@ class PlacesController < ApplicationController
   before_action :set_place, only: [:show, :edit, :update, :destroy]
 
   def index
-    @places = Place.all#where.not(latitude: nil, longitude: nil)
+    if params[:query].present?
+      @places = Place.search_by_name_and_address(params[:query])
+    else
+      @places = Place.all
+    end
 
     @markers = @places.map do |place|
       {
@@ -34,7 +38,7 @@ class PlacesController < ApplicationController
     redirect_to place_path
   end
 
-  def my_places
+  def my_places # lista as budegas do dono dessas budegas
     @my_places = Place.where(user: current_user)
   end
 
