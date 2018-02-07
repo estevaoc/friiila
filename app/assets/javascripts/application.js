@@ -11,7 +11,7 @@ function my_function() {
 }
 
 function alertFunction() {
-  let value = confirm("Pode abrir a conta?");
+  var value = confirm("Pode abrir a conta?");
     if (value == true)
   {
     alert("Conta criada!");
