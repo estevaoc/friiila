@@ -15,15 +15,12 @@ body {
     justify-content: center;
 }
 
-
 .banner2 {
-    color: white;
-    text-align: center;
-    height: 750px;
-    background-size: cover !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 100%;
+    }
+
+.banner3 {
+    width: 100%;
     }
 
 .banner h1 {
