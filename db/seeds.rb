@@ -9,7 +9,7 @@ users_attributes = [
 User.create!(users_attributes)
 
 puts("Users created")
-puts("Creating offers")
+puts("Creating places")
 
 places_attributes = [
 {place_name: "Jack Rock Bar", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864404/friiila/jack.jpg", address: "Sion, Belo Horizonte", user_id: "1"},

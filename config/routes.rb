@@ -10,8 +10,9 @@ Rails.application.routes.draw do
       collection do
         get 'my_open_bills', to: "bills#my_open_bills"
       end
-      resources :orders
     end
   end
-  resources :bills, only: [:index]
+  resources :bills, only: [:index] do
+    resources :orders
+  end
 end

@@ -1,7 +1,7 @@
 <h1>Adicione um novo pedido do criente</h1>
 
 
-<%= simple_form_for(@order) do |f| %>
+<%= simple_form_for([@bill, @order]) do |f| %>
   <% if @order.errors.any? %>
     <div class="errors-container">
       <ul>
