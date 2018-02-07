@@ -3,13 +3,13 @@
 
 <h1>Lugares Legais</h1>
 
-  <%= form_tag places_path, method: :get, id: "search", :class => "hidden1"  do %>
-    <%= text_field_tag :query,
-      params[:query],
-      class: "form-control",
-      placeholder: "Nome ou Bairro"
-    %>
-  <% end %>
+<%= form_tag places_path, method: :get, id: "search", :class => "hidden1"  do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Nome ou Bairro"
+  %>
+<% end %>
 
 <div class="row">
   <% @places.each do |place| %>
