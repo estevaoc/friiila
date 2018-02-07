@@ -23,9 +23,11 @@
           </tbody>
         </table>
       </div>
-      <div>
-        <input type="submit" class="btn btn-success btn-lg" value="Pagar">
-      </div>
+      <%= link_to places_path do %>
+        <div>
+          <input onclick="paidFunction()" type="submit" class="btn btn-success btn-lg" value="Pagar">
+        </div>
+      <%end%>
     </div>
   </div>
 
