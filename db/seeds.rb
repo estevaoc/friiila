@@ -1,9 +1,9 @@
 puts("Creating users")
 
 users_attributes = [
-{user_name: "Estevao", email: "estevaoc@hotmail.com", role: "admin",password:"123456"},
-{user_name: "Mateus", email: "mateuspa@gmail.com", role: "manager",password:"123456"},
-{user_name: "Renata", email: "asadebarata@gmail.com", role: "user",password:"splift"}
+{user_name: "Estevao", email: "estevaoc@hotmail.com", role: "admin",password:"123456", photo:"http://res.cloudinary.com/doui6owsy/image/upload/v1518019755/friiila/estevao.jpg"},
+{user_name: "Mateus", email: "mateuspa@gmail.com", role: "manager",password:"123456", photo:"http://res.cloudinary.com/doui6owsy/image/upload/v1518019755/friiila/mateus.jpg"},
+{user_name: "Renata", email: "asadebarata@gmail.com", role: "user",password:"splift", photo:"http://res.cloudinary.com/doui6owsy/image/upload/v1518019755/friiila/renata.jpg"}
 ]
 
 User.create!(users_attributes)
