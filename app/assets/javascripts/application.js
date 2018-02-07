@@ -2,5 +2,10 @@
 //= require_tree .
 
 function my_function() {
-  document.getElementById("mobile").style.display = 'block';
+    var x = document.getElementById("search");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }
