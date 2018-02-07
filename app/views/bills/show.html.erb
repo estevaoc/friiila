@@ -3,7 +3,7 @@
 <p>Sou <%= @bill.user.user_name %> e estou no <%= @bill.place.place_name %></p>
 
 <% @orders.each do |order| %>
-
-    <h3><%= order.amount %> - <%= order.item.product %>.......<%= order.item.price %></h3>
-
+  <h3><%= order.amount %> <%= order.item.product %> = <%= order.item.price*order.amount %> reais</h3>
 <% end %>
+
+<h3>Total = </h3>

@@ -1,7 +1,7 @@
 class OrdersController < ApplicationController
   before_action :set_bill, only: [:index, :new, :create]
 
-  def index #mostra as orders dentro de uma bill especifica, falta (.where(@bill.paid: false))
+  def index #mostra as orders dentro de uma bill especifica
     @orders = Order.where(bill_id: @bill)
   end
 
@@ -37,9 +37,5 @@ class OrdersController < ApplicationController
 
   def set_bill
     @bill = Bill.find(params[:bill_id])
-  end
-
-  def set_place
-    @place = Place.find(params[:place_id])
   end
 end

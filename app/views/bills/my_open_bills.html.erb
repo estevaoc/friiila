@@ -2,6 +2,8 @@
 
 <% @bills.each do |bill| %>
   <%= link_to bill_orders_path(bill) do %>
-    <h3><%= bill.user.user_name %> - pagou? <%= bill.paid %></h3>
+    <h3>Usuario: <%= bill.user.user_name %></h3>
   <% end %>
-<% end %>
+<% end %> <br>
+
+<%= link_to "Voltar para minhas budegas", my_places_places_path, class: "btn btn-primary" %>
