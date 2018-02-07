@@ -1,15 +1,15 @@
 puts("Creating users")
 
-user_attributes = [
+users_attributes = [
 {user_name: "Estevao", email: "estevaoc@hotmail.com", role: "admin",password:"123456"},
 {user_name: "Mateus", email: "mateuspa@gmail.com", role: "manager",password:"123456"},
 {user_name: "Renata", email: "asadebarata@gmail.com", role: "user",password:"splift"}
 ]
 
-puts("Users created")
-puts("Creating offers")
+User.create!(users_attributes)
 
-User.create!(user_attributes)
+puts("Users created")
+puts("Creating places")
 
 places_attributes = [
 {place_name: "Jack Rock Bar", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864404/friiila/jack.jpg", address: "Sion, Belo Horizonte", user_id: "1"},
@@ -25,3 +25,14 @@ places_attributes = [
 Place.create!(places_attributes)
 
 puts("Places created")
+puts("Creating items")
+
+items_attributes = [
+{product: "Coca-Cola", price: "5", place_id: "1"},
+{product: "Hamubrguer", price: "15", place_id: "1"},
+{product: "Batata Frita", price: "10", place_id: "1"}
+]
+
+Item.create!(items_attributes)
+
+puts("Items created")

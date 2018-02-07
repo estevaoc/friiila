@@ -1,0 +1,19 @@
+<h1>Adicione um novo pedido do criente</h1>
+
+
+<%= simple_form_for([@bill, @order]) do |f| %>
+  <% if @order.errors.any? %>
+    <div class="errors-container">
+      <ul>
+        <% @order.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.label :item_id %>
+  <%= f.text_field :item_id %>
+  <%= f.label :amount %>
+  <%= f.text_field :amount %>
+  <%= f.submit "OK", class: "btn btn-primary" %>
+<% end %>

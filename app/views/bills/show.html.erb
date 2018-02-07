@@ -1,2 +1,9 @@
-<h1>Bills#show</h1>
-<p>Find me in app/views/bills/show.html.erb</p>
+<h1>Minha Conta</h1>
+
+<p>Sou <%= @bill.user.user_name %> e estou no <%= @bill.place.place_name %></p>
+
+<% @orders.each do |order| %>
+  <h3><%= order.amount %> <%= order.item.product %> = <%= order.item.price*order.amount %> reais</h3>
+<% end %>
+
+<h3>Total = </h3>
