@@ -1,8 +1,8 @@
 class OrdersController < ApplicationController
   before_action :set_bill, only: [:index, :new, :create]
   before_action :set_place, only: [:create]
-  def index #mostra as orders dentro de uma bill especifica
-    @orders = Order.all.where(@bill.paid: false)
+  def index #mostra as orders dentro de uma bill especifica, falta (.where(@bill.paid: false))
+    @orders = Order.all
   end
 
   def new

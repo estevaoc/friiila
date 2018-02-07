@@ -1,0 +1,7 @@
+<h1>Contas abertas no <%= @place.place_name %></h1>
+
+<% @bills.each do |bill| %>
+  <%= link_to place_bill_orders_path(@place, bill) do %>
+    <h3><%= bill.user.user_name %> - pagou? <%= bill.paid %></h3>
+  <% end %>
+<% end %>
