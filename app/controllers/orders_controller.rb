@@ -1,8 +1,8 @@
 class OrdersController < ApplicationController
   before_action :set_bill, only: [:index, :new, :create]
-  before_action :set_place, only: [:create]
+
   def index #mostra as orders dentro de uma bill especifica, falta (.where(@bill.paid: false))
-    @orders = Order.all
+    @orders = Order.where(bill_id: @bill)
   end
 
   def new
@@ -13,7 +13,7 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
     @order.bill = @bill
     @order.save
-    redirect_to place_bill_orders_path(@place, @bill)
+    redirect_to bill_orders_path(@bill)
   end
 
   def show #provavelmente nao sera utilizada
@@ -32,7 +32,7 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(:amount, :item)
+    params.require(:order).permit(:amount, :item_id)
   end
 
   def set_bill

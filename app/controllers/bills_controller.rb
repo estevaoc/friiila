@@ -32,7 +32,7 @@ class BillsController < ApplicationController
   end
 
   def my_open_bills #para a budega ver todas suas bills abertas (ainda nao implementado .where(@bill.paid: false))
-    @bills = Bill.all
+    @bills = Bill.where(paid: false, place_id: @place) # e place_id == place
   end
 
   def destroy

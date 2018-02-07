@@ -3,7 +3,7 @@
 <p>Sou <%= @bill.user.user_name %> e estou no <%= @bill.place.place_name %></p>
 
 <% @orders.each do |order| %>
-  <%= link_to(order) do %>
+
     <h3><%= order.amount %> - <%= order.item.product %>.......<%= order.item.price %></h3>
-  <% end %>
+
 <% end %>
