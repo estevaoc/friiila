@@ -8,7 +8,7 @@
 <div class="row">
   <% @my_places.each do |place| %>
   <div class="col-md-3 col-sm-4 col-xs-12">
-    <%= link_to(place) do %>
+    <%= link_to my_open_bills_place_bills_path(place) do %>
       <div class="card">
         <div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('<%= cl_image_path place.photo %>')">
           <div class="card-description">
