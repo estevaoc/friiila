@@ -1,9 +1,12 @@
 // Specific CSS for your home-page
 body {
     margin: 0;
+    background-color: black;
+    color: #f9f7f7;
     //margin-bottom: 100px;
    // font-family: 'Dangrek', sans-serif;
 }
+
 
 .banner {
     color: white;
@@ -88,7 +91,7 @@ body {
 }
 
 .footer {
-    background: #F4F4F4;
+    background: black;
     display: flex;
     box-align: center;
     align-items: center;
@@ -96,7 +99,7 @@ body {
     justify-content: space-between;
     height: 10px;
     padding: 40px 16px;
-    color: rgba(0,0,0,0.3);
+    color: grey;
 }
 
 .footer-links {
@@ -104,8 +107,7 @@ body {
   }
 
 .footer-links a {
-    color: black;
-    opacity: 0.15;
+    color: grey;
     text-decoration: none;
     font-size: 24px;
     padding: 0px 10px;
@@ -114,7 +116,7 @@ body {
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
+
     text-rendering: auto;
   }
 
