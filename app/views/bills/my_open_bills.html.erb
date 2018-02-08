@@ -2,7 +2,7 @@
 
 <% @bills.each do |bill| %>
   <%= link_to bill_orders_path(bill) do %>
-    <h3><%= image_tag current_user.photo, class: "foto"%> <%= bill.user.user_name %></h3>
+    <h3><%= image_tag bill.user.photo, class: "foto"%> <%= bill.user.user_name %></h3>
   <% end %>
 <% end %> <br>
 
