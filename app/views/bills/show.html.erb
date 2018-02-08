@@ -1,7 +1,8 @@
 <%= content_for :title, "Friiila" %>
 
    <div class="row">
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 bill" style='background: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%), url(<%= @place.photo %>)'>
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 bill" >
+      <div class="bg" style='background: url(<%= @place.photo %>) center center;'></div>
       <div class="card-description">
         <h3><%= @bill.place.place_name %></h3>
       </div>
@@ -18,16 +19,12 @@
           <td><%= order.item.price*order.amount %></td>
         </tr>
         <% end %>
-
-
           </tbody>
         </table>
       </div>
-      <%= link_to places_path do %>
-        <div>
-          <input onclick="paidFunction()" type="submit" class="btn btn-success btn-lg" value="Pagar">
-        </div>
-      <%end%>
+      <div style="text-align: center;">
+        <input type="submit" class="btn btn-success btn-lg" value="Pagar">
+      </div>
     </div>
   </div>
 
