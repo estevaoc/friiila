@@ -1,7 +1,7 @@
 //= require rails-ujs
 //= require_tree .
 
-function my_function() {
+function toggleSearchBar() {
   var x = document.getElementById("search");
   if (x.style.display === "none") {
     x.style.display = "block";

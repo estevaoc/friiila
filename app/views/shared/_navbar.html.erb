@@ -10,17 +10,17 @@
           <ul class="dropdown-menu dropdown-menu-left navbar-wagon-dropdown-menu">
             <li>
               <%= link_to edit_user_registration_path do %>
-                <%= t(".profile", default: "Profile") %>
+                <%= t(".profile", default: "Perfil") %>
               <% end %>
             </li>
             <li>
               <%= link_to my_places_places_path do %>
-                <%= t(".my_places", default: "My Places") %>
+                <%= t(".my_places", default: "Meus Lugares") %>
               <% end %>
             </li>
             <li>
               <%= link_to destroy_user_session_path, method: :delete do %>
-                <%= t(".sign_out", default: "Log out") %>
+                <%= t(".sign_out", default: "Sair") %>
               <% end %>
             </li>
           </ul>
@@ -38,6 +38,6 @@
   <% end %>
 
   <!-- Search -->
-  <i class="fa fa-search navbar-wagon-item" onclick="my_function()"></i>
+  <i class="fa fa-search navbar-wagon-item" onclick="toggleSearchBar()"></i>
 
 </div>
