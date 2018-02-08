@@ -23,8 +23,12 @@
         </table>
       </div>
       <div style="text-align: center;">
-        <input type="submit" class="btn btn-success btn-lg" value="Pagar">
+        <%= link_to place_bill_path(@place, @bill), method: :patch do %>
+          <input onclick="paidFunction()" type="submit" class="btn btn-success btn-lg" value="Pagar">
+        <%end%>
       </div>
     </div>
   </div>
+
+
 

@@ -28,8 +28,10 @@ class BillsController < ApplicationController
   end
 
   def update
-    @bill.update(bill_params)
-    redirect_to places_path(@places)
+    # @bill.update(bill_params)
+    @bill.paid = true
+    @bill.save!
+    redirect_to places_path
   end
 
   def show
