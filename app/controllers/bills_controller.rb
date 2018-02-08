@@ -7,15 +7,20 @@ class BillsController < ApplicationController
   end
 
   def new
-    @bill = Bill.new
-    create
+    @open_bill = Bill.find_by(paid: false, user_id: current_user.id)
+    if @open_bill
+      redirect_to place_bill_path(@open_bill.place, @open_bill)
+    else
+      @bill = Bill.new
+      create
+    end
   end
 
   def create
     @bill = Bill.new(paid: false)
     @bill.user = current_user
     @bill.place = @place
-    @bill.save
+    @bill.save!
     redirect_to place_bill_path(@place, @bill)
   end
 
