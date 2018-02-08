@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     collection do
       get 'my_places', to: "places#my_places"
     end
-    resources :bills, only: [:new, :create, :show] do
+    resources :bills, only: [:new, :create, :show, :update] do
       collection do
         get 'my_open_bills', to: "bills#my_open_bills"
       end
