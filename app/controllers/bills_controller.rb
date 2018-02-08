@@ -1,5 +1,5 @@
 class BillsController < ApplicationController
-  before_action :set_place, only: [:create, :show, :update, :my_open_bills]
+  before_action :set_place, only: [:new, :create, :show, :update, :my_open_bills]
   before_action :set_bill, only: [:update, :show]
 
   def index #para o cliente ver todas suas bills passadas
@@ -20,7 +20,7 @@ class BillsController < ApplicationController
     @bill = Bill.new(paid: false)
     @bill.user = current_user
     @bill.place = @place
-    @bill.save
+    @bill.save!
     redirect_to place_bill_path(@place, @bill)
   end
 
