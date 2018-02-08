@@ -20,7 +20,7 @@ class BillsController < ApplicationController
     @bill = Bill.new(paid: false)
     @bill.user = current_user
     @bill.place = @place
-    @bill.save!
+    @bill.save
     redirect_to place_bill_path(@place, @bill)
   end
 
@@ -28,9 +28,8 @@ class BillsController < ApplicationController
   end
 
   def update
-    # @bill.update(bill_params)
     @bill.paid = true
-    @bill.save!
+    @bill.save
     redirect_to places_path
   end
 
