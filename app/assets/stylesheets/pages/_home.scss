@@ -118,14 +118,14 @@ body {
     text-rendering: auto;
   }
 
-  .card-body a {
-    color: white;
-    text-decoration: none;
-  }
+.card-body a {
+  color: white;
+  text-decoration: none;
+}
 
-  #card-home {
-    width: 33%;
-  }
+#card-home {
+  width: 33%;
+}
 
 .footer .fa-heart {
     color: #D23333;
@@ -154,14 +154,27 @@ button {
   background-color: rgba(255,255,255,0.8);
   background: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 100%);
   position: relative;
+  z-index: 1;
 }
+
+.bill .bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .4;
+  width: 100%;
+  height: 100%;
+}
+
 
 .hidden1 {
   display: none;
 }
 
 .total {
-  background-color: black;
   opacity: 1;
   border: none;
   font-family: $card-description-font;
@@ -177,16 +190,21 @@ button {
   font-family: $card-font;
   font-size: 16px;
   margin: 10px;
+  overflow: auto;
+  max-height: 55%;
 }
 
 .btn-success {
-   width: 350px;
-   margin-top:150px;
-   background-color: green;
+   width: 80%;
+
    font-family: $card-font;
-   position: fixed;
+
 }
 
 table {
-  width: 110%;
+  width: 100%;
+}
+
+.central {
+  padding-top: 45px;
 }
