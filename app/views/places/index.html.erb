@@ -3,13 +3,13 @@
 
 <h1>Lugares Legais</h1>
 
-  <%= form_tag places_path, method: :get, id: "search", :class => "hidden1"  do %>
-    <%= text_field_tag :query,
-      params[:query],
-      class: "form-control",
-      placeholder: "Nome ou Bairro"
-    %>
-  <% end %>
+<%= form_tag places_path, method: :get, id: "search", :class => "hidden1"  do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Nome ou Bairro"
+  %>
+<% end %>
 
 <div class="row">
   <% @places.each do |place| %>
@@ -18,7 +18,7 @@
       <div class="card">
         <div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('<%= cl_image_path place.photo %>')">
           <div class="card-description">
-            <p><%= place.place_name %></p>
+            <p onclick="alertFunction()"><%= place.place_name %></p>
           </div>
           <!-- <img class="card-user avatar avatar-large" src="images/jad.png"> -->
           <a class="card-link" href="#"></a>

@@ -1,4 +1,4 @@
-<h1>Todos os pedidos desse criente: </h1>
+<h1>Todos os pedidos desse cliente: </h1>
 
 <% @orders.each do |order| %>
     <h3><%= order.amount %> <%= order.item.product %> = <%= order.item.price*order.amount %> reais</h3>
