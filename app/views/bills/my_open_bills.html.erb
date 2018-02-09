@@ -1,17 +1,17 @@
 <h1>Contas abertas no <%= @place.place_name %></h1>
 
 <% @bills.each do |bill| %>
-  <div class="col-md-2 col-sm-4 col-xs-12">
-    <div class="cardpanda">
-      <div class="frontpanda">
-        <%= image_tag bill.user.photo, class: "contactpanda"%>
-        <span class="namepanda"><%= bill.user.user_name %></span>
-        <hr>
-        <span class="jobpanda">Total</span>
-      </div>
-      <div class="backpanda">
-        <%= link_to "Novo pedido", bill_orders_path(bill), class: "novopididu" %>
-        <table class="orderspanda">
+  <div class="col-md-2 col-sm-3 col-xs-6 cardpanda">
+    <div class="frontpanda">
+      <%= image_tag bill.user.photo, class: "contactpanda"%>
+      <span class="namepanda"><%= bill.user.user_name %></span>
+      <hr>
+      <span class="jobpanda">Total</span>
+    </div>
+    <div class="backpanda">
+      <%= link_to "Novo pedido", bill_orders_path(bill), class: "novopididu" %>
+      <div class="orders">
+        <table>
           <tbody>
             <% bill.orders.each do |order| %>
               <tr>
@@ -27,4 +27,4 @@
   </div>
 <% end %>
 
-<%= link_to "Voltar", my_places_places_path, class: "btn btn-success" %>
+<%= link_to "Voltar", my_places_places_path, class: "btn btn-success btn-lg" %>
