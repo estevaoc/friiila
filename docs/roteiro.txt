@@ -1,0 +1,31 @@
+APRESENTAÇÃO
+  ideia e ângulo
+
+PIT
+
+Guest
+  Estou na Landing e quero me cadastrar #76 #101
+
+Guest dono da budega
+  Estou na landing e quero cadastrar meu estabelecimento #102
+
+User
+  Escolho o bar que quero entrar #103
+  Abro a conta #74
+  Faço um pedido #104 #105
+
+Loop
+  Gerente da Budega - Estevão
+    Entra na conta do User #50 #107
+    Cadastrar o pedido #108 #110
+
+  User
+    Verifca em tempo real a conta
+
+User
+  Paga a conta ou não pagar #74
+
+Gerente da Budega
+  Fecha a conta #106 #109
+
+FECHAMENTO
