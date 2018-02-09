@@ -1,6 +1,6 @@
 <%= content_for :title, "Friiila" %>
-<h1>Meus Lugares</h1>
 
+<div class= "primeira">
 <a><%= link_to new_place_path do %>
 <button type="button">Adicionar Budega</button></a>
 <% end %>
@@ -17,8 +17,7 @@
           <a class="card-link" href="#"></a>
         </div>
     <%end%>
-        <div class="card-footer">
-           <p><%= place.address %>
+        <div class="card-footer ">
              <%= link_to place_path(place), method: :delete, data: { confirm: "Que isso, tem certeza?" } do %>
         <i class="fa fa-trash-o"></i>
         <a><%= link_to edit_place_path(place) do %>
@@ -31,6 +30,7 @@
       </div>
   </div>
   <% end %>
+</div>
 </div>
 
 
