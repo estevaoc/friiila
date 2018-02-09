@@ -11,9 +11,15 @@
       </ul>
     </div>
   <% end %>
+
   <%= f.label :item_id %>
-  <%= f.text_field :item_id %>
-  <%= f.label :amount %>
-  <%= f.text_field :amount %>
+  <div id="black-font">
+    <%= f.text_field :item_id %>
+  </div>
+  <%= f.label :amount, "Quantidade" %>
+  <div id="black-font">
+    <%= f.text_field :amount %>
+  </div> <br>
   <%= f.submit "OK", class: "btn btn-primary" %>
+
 <% end %>
