@@ -10,15 +10,15 @@
       <p>Total</p>
       </div>
       <div class="orders">
-         <table>
+        <table>
           <tbody>
-           <% @orders.each do |order| %>
-          <tr>
-          <td> <%= order.amount %> </td>
-          <td>  <%= order.item.product %> </td>
-          <td><%= order.item.price*order.amount %></td>
-        </tr>
-        <% end %>
+            <% @orders.each do |order| %>
+              <tr>
+                <td><%= order.amount %></td>
+                <td><%= order.item.product %></td>
+                <td><%= order.item.price*order.amount %></td>
+              </tr>
+            <% end %>
           </tbody>
         </table>
       </div>
