@@ -160,6 +160,8 @@ button {
   background: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 100%);
   position: relative;
   z-index: 1;
+  min-height:100%;
+  position:relative;
 }
 
 .bill .bg {
@@ -200,10 +202,10 @@ button {
 }
 
 .btn-success {
-   width: 80%;
-
-   font-family: $card-font;
-
+  width: 80%;
+  font-family: $card-font;
+  position: absolute;
+  left: 10% ; right: 0; bottom: 0;
 }
 
 table {
