@@ -6,7 +6,20 @@
       <%= image_tag bill.user.photo, class: "contactpanda"%>
       <span class="namepanda"><%= bill.user.user_name %></span>
       <hr>
-      <span class="jobpanda">Total</span>
+      <div class="jobpanda">
+        <table>
+          <tbody>
+              <tr>
+                <td>Total: </td>
+                <% total = 0 %>
+                <% bill.orders.each do |order| %>
+                  <% total += order.item.price*order.amount%>
+                <% end %>
+                <td><%= total %></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <div class="backpanda">
       <%= link_to "Novo pedido", bill_orders_path(bill), class: "novopididu" %>
