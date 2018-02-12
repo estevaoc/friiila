@@ -10,9 +10,9 @@ Guest dono da budega
   Estou na landing e quero cadastrar meu estabelecimento #102
 
 User
-  Escolho o bar que quero entrar
+  Escolho o bar que quero entrar #121
   Abro a conta #74
-  Faço um pedido #104 #105
+  Faço um pedido #122 #105
 
 Loop
   Gerente da Budega - Estevão
