@@ -13,7 +13,7 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
     @order.bill = @bill
     @order.save
-    redirect_to bill_orders_path(@bill)
+    redirect_to my_open_bills_place_bills_path(@order.bill.place)
   end
 
   def show #provavelmente nao sera utilizada
