@@ -38,6 +38,9 @@
   <% end %>
 
   <!-- Search -->
-  <i class="fa fa-search navbar-wagon-item" onclick="toggleSearchBar()"></i>
-
+  <% if user_signed_in? %>
+    <i class="fa fa-search navbar-wagon-item" onclick="toggleSearchBar()"></i>
+    <% else %>
+    <%= link_to "Estabelecimentos", stablish_path, class: "navbar-wagon-item navbar-wagon-link" %>
+  <% end %>
 </div>
