@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   root to: 'pages#home'
+  get 'stablish', to: 'pages#stablish'
   resources :places do
     collection do
       get 'my_places', to: "places#my_places"
