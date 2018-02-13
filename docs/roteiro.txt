@@ -17,7 +17,7 @@ User
 Loop
   Gerente da Budega - Estevão
     Entra na conta do User #50 #107
-    Cadastrar o pedido #108 #110
+    Cadastrar o pedido #108
 
   User
     Verifca em tempo real a conta
