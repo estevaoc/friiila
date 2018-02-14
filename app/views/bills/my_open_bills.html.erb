@@ -36,6 +36,10 @@
           </tbody>
         </table>
       </div>
+      <%= link_to "Fechar conta", my_open_bills_place_bills_path(@place), class: "novopididu" %>
+      <%= link_to my_open_bills_place_bills_path(@place), method: :delete do %>
+        <input class="novopididu" value="Fechar conta">
+      <%end%>
     </div>
   </div>
 <% end %>
