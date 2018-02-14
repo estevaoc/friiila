@@ -1,7 +1,7 @@
 .cardpanda {
     display: inline-block;
     position: relative;
-    width: 25%;
+
     height: 260px;
     opacity: 0.85;
 }
@@ -19,17 +19,18 @@
     -webkit-transition-timing-function: linear;
             transition-timing-function: linear;
     border-radius: 5px;
+    background: linear-gradient(to bottom right, #333, rgba(0, 0, 0, 0.5));
 }
 .frontpanda {
     transform: rotateY(0deg);
-    background: -webkit-linear-gradient(top left, #84DD63, #009970);
-    background: linear-gradient(to bottom right, #84DD63, #009970);
+    //background: -webkit-linear-gradient(top left, #84DD63, #009970);
+    //background: linear-gradient(to bottom right, #333, #009970);
     text-align: center;
     padding: 30px;
 }
 .backpanda {
-    background: -webkit-linear-gradient(top left, #009970, #84DD63);
-    background: linear-gradient(to bottom right, #009970, #84DD63);
+    //background: -webkit-linear-gradient(top left, #009970, #84DD63);
+    //background: linear-gradient(to bottom right, #009970, #84DD63);
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
     padding: 15px;
@@ -47,7 +48,7 @@
 .frontpanda .contactpanda {
     height: 120px;
     width: 120px;
-    border: 5px solid #B2DBBF;
+    border: 5px solid #11b545;
     border-radius: 50%;
     display: inline-block;
     margin-bottom: 10px;
@@ -66,13 +67,17 @@
     border: 1px solid;
 }
 .novopididu {
-    color: black;
+    color: white;
 }
 .novopididu:hover {
-    color: black;
+    color: #11b545;
 }
 .orderspanda {
   font-size: 16px;
   overflow: auto;
   max-height: 55%;
+}
+
+#position {
+  position: relative;
 }
