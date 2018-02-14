@@ -21,6 +21,9 @@ gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
 gem 'geocoder'
 gem 'pg_search'
+gem 'rails-sweetalert2-confirm'
+gem 'rails-assets-sweetalert2', source: 'https://rails-assets.org'
+gem 'jquery-rails'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

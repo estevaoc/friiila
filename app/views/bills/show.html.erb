@@ -34,9 +34,7 @@
         </table>
       </div>
       <div style="text-align: center;">
-        <%= link_to place_bill_path(@place, @bill), method: :patch do %>
-          <input onclick="paidFunction()" type="submit" class="btn btn-success btn-lg" value="Pagar">
-        <%end%>
+        <%= link_to('Pagar', place_bill_path(@place, @bill), method: :patch, data: { confirm: 'Conta paga! Voce esta friiila!!!' }) %>
       </div>
     </div>
   </div>
