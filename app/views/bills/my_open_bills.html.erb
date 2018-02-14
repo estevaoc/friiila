@@ -1,3 +1,4 @@
+<%= content_for :title, "Friiila - A vida sem fila" %>
 <h1>Contas abertas no <%= @place.place_name %></h1>
 
 <% @bills.each do |bill| %>
@@ -43,4 +44,4 @@
   </div>
 <% end %>
 
-<%= link_to "Voltar", my_places_places_path, class: "btn btn-success btn-lg", id: "position%>
+<%= link_to "Voltar", my_places_places_path, class: "btn btn-success btn-lg", id: "position"%>
