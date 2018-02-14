@@ -1,5 +1,15 @@
 <h1>Contas abertas no <%= @place.place_name %></h1>
 
+<div class="primeira">
+  <%= form_tag my_open_bills_place_bills_path, method: :get, id: "search", :class => "hidden1"  do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "Nome"
+    %>
+  <% end %>
+</div>
+
 <% @bills.each do |bill| %>
   <div class="col-md-2 col-sm-3 col-xs-6 cardpanda">
     <div class="frontpanda">
