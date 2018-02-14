@@ -14,11 +14,11 @@
 
   <%= f.label :item_id %>
   <div id="black-font">
-    <%= f.text_field :item_id %>
+    <%= f.text_field :item_id, required: true %>
   </div>
   <%= f.label :amount, "Quantidade" %>
   <div id="black-font">
-    <%= f.text_field :amount %>
+    <%= f.text_field :amount, required: true %>
   </div> <br>
   <%= f.submit "OK", class: "btn btn-primary" %>
 
