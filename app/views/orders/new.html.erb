@@ -1,3 +1,4 @@
+<%= content_for :title, "Friiila - A vida sem fila" %>
 <h1>Adicione um novo pedido do criente</h1>
 
 
@@ -14,11 +15,11 @@
 
   <%= f.label :item_id %>
   <div id="black-font">
-    <%= f.text_field :item_id %>
+    <%= f.text_field :item_id, required: true %>
   </div>
   <%= f.label :amount, "Quantidade" %>
   <div id="black-font">
-    <%= f.text_field :amount %>
+    <%= f.text_field :amount, required: true %>
   </div> <br>
   <%= f.submit "OK", class: "btn btn-primary" %>
 

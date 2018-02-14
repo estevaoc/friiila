@@ -1,3 +1,4 @@
+<%= content_for :title, "Friiila - A vida sem fila" %>
 <h1>Contas abertas no <%= @place.place_name %></h1>
 
 <div class="primeira">
@@ -11,7 +12,7 @@
 </div>
 
 <% @bills.each do |bill| %>
-  <div class="col-md-2 col-sm-3 col-xs-6 cardpanda">
+  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 cardpanda">
     <div class="frontpanda">
       <%= image_tag bill.user.photo, class: "contactpanda"%>
       <span class="namepanda"><%= bill.user.user_name %></span>
@@ -46,11 +47,12 @@
           </tbody>
         </table>
       </div>
-      <%= link_to update_owner_place_bill_path(@place, bill), method: :patch do %>
-        <input onclick="paidFunction()" type="submit" class="novopididu" value="Fechar conta">
-      <%end%>
+
+        <%= link_to "Fechar conta", update_owner_place_bill_path(@place, bill), class: "novopididu", method: :patch %>
+
     </div>
   </div>
 <% end %>
 
-<%= link_to "Voltar", my_places_places_path, class: "btn btn-success btn-lg" %>
+
+<%= link_to "Voltar", my_places_places_path, class: "btn btn-success btn-lg", id: "position" %>
