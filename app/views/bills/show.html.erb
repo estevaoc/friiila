@@ -1,4 +1,4 @@
-<%= content_for :title, "Friiila" %>
+<%= content_for :title, "Friiila - A vida sem fila" %>
 
    <div class="row">
     <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 bill" >
@@ -34,7 +34,7 @@
         </table>
       </div>
       <div style="text-align: center;">
-        <%= link_to('Pagar', place_bill_path(@place, @bill), method: :patch, data: { confirm: 'Conta paga! Voce esta friiila!!!' }) %>
+        <%= link_to('Pagar', place_bill_path(@place, @bill), method: :patch, data: { confirm: 'Conta paga! Voce esta friiila!!!' }, class: "btn btn-success btn-lg") %>
       </div>
     </div>
   </div>
