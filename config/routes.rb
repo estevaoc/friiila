@@ -8,6 +8,10 @@ Rails.application.routes.draw do
       get 'my_places', to: "places#my_places"
     end
     resources :bills, only: [:new, :create, :show, :update] do
+
+      member do
+        patch 'update_owner', to: 'bills#update_owner'
+      end
       collection do
         get 'my_open_bills', to: "bills#my_open_bills"
       end

@@ -36,6 +36,9 @@
           </tbody>
         </table>
       </div>
+      <%= link_to update_owner_place_bill_path(@place, bill), method: :patch do %>
+        <input onclick="paidFunction()" type="submit" class="novopididu" value="Fechar conta">
+      <%end%>
     </div>
   </div>
 <% end %>
