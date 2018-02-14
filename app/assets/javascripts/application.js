@@ -24,7 +24,6 @@ function alertFunction() {
   }
 }
 
-
 function paidFunction() {
   var value = alert("Conta paga! Voce esta friiila!");
 }
