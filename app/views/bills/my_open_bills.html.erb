@@ -36,9 +36,8 @@
           </tbody>
         </table>
       </div>
-      <%= link_to "Fechar conta", my_open_bills_place_bills_path(@place), class: "novopididu" %>
-      <%= link_to my_open_bills_place_bills_path(@place), method: :delete do %>
-        <input class="novopididu" value="Fechar conta">
+      <%= link_to update_owner_place_bill_path(@place, bill), method: :patch do %>
+        <input onclick="paidFunction()" type="submit" class="novopididu" value="Fechar conta">
       <%end%>
     </div>
   </div>
