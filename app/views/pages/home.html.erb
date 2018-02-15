@@ -1,12 +1,10 @@
 
 <%= content_for :title, "Friiila - A vida sem fila" %>
-
 <!-- <div class="banner" style="background: linear-gradient(0deg, rgba(83, 65, 138, 0.46) 74%, rgba(0,0,0,0) 122%), url(<%#= asset_path 'cerveja.jpg'%>);">
       <div class="banner-content">
         <h1>Livre para ir e vir</h1>
       </div>
     </div> -->
-
 <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -16,56 +14,49 @@
     <li data-target="#bannerCarousel" data-slide-to="3"></li>
     <li data-target="#bannerCarousel" data-slide-to="4"></li>
   </ol>
-
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-
     <div class="item active">
       <img src="<%= asset_path "banner1.jpg" %>" alt="Seja Friiila">
       <div class="carousel-caption banner-caption">
         <h1 class="carousel-title">Seja Friiila</h1>
-        <h3 class="carousel-text">E viva só a parte boa da balada!</h3>
-        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde", id: "banner-button" %>
+        <h3 class="carousel-text">Tenha autonomia do seu ir e vir na balada!</h3>
+        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde"%>
       </div>
     </div>
-
     <div class="item">
       <img src="<%= asset_path "banner2.jpg" %>" alt="Não pare">
       <div class="carousel-caption">
         <h1 class="carousel-title">Aproveite mais</h1>
-        <h3 class="carousel-text">Cada minuto de todas as happy hours!</h3>
+        <h3 class="carousel-text">Gaste mais tempo na balada e não na fila!</h3>
         <%= link_to "Quero!", new_user_registration_path, class: "buttonverde"%>
       </div>
     </div>
-
     <div class="item">
       <img src="<%= asset_path "banner3.jpg" %>" alt="Não esquente">
       <div class="carousel-caption">
-        <h1 class="carousel-title">Bem vindo Friiila</h1>
-        <h3 class="carousel-text">Tchau parcial, adeus maquininha!</h3>
-        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde", id: "banner-button" %>
+        <h1 class="carousel-title">Não esquente</h1>
+        <h3 class="carousel-text">Diga adeus a parcial e a maquininha!</h3>
+        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde"%>
+      </div>
     </div>
-
     <div class="item">
       <img src="<%= asset_path "banner4.jpg" %>" alt="Compartilhe essa liberdade">
       <div class="carousel-caption">
         <h1 class="carousel-title">Compartilhe essa liberdade</h1>
-        <h3 class="carousel-text">Acompanhe seu consumo na palma da sua mão!</h3>
-        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde", id: "banner-button" %>
+        <h3 class="carousel-text">Fale com seus amigos e saiam todos juntos da balada!</h3>
+        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde"%>
       </div>
     </div>
-
     <div class="item">
       <img src="<%= asset_path "banner5.jpg" %>" alt="Não pare">
       <div class="carousel-caption">
-        <h1 class="carousel-title">Autonomia</h1>
-        <h3 class="carousel-text">Não espere para ser livre!</h3>
-        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde", id: "banner-button" %>
+        <h1 class="carousel-title">Não pare</h1>
+        <h3 class="carousel-text">Comece de novo, é tão fácil e rápido!</h3>
+        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde"%>
       </div>
     </div>
-
   </div>
-
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#bannerCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -77,8 +68,17 @@
   </a>
 </div>
 
-<h3 class="text-center">Visão do cliente</h3>
-<img class="banner2" src=<%= asset_path 'telaiphone.jpg'%>>
+<h3 class="text-center">Comece a usar</h3>
+
+<div class="Wrapper">
+  <div class"container">
+    <div class="col-md-12 row">
+
+      <img src="<%= asset_path "iphonegif.gif" %>">
+    </div>
+  </div>
+</div>
+
 
 <div class="footer">
   <div class="footer-links">
@@ -90,5 +90,10 @@
   </div>
 </div>
 <p></p>
+
+
+
+
+
 
 
