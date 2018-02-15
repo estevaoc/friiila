@@ -1,28 +1,21 @@
 <%= content_for :title, "Friiila - A vida sem fila" %>
 <h1>Adicione um novo pedido do criente</h1>
-
-
-<%= simple_form_for([@bill, @order]) do |f| %>
-  <% if @order.errors.any? %>
-    <div class="errors-container">
-      <ul>
-        <% @order.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <%= f.label :item_id %>
-  <div id="black-font">
-    <%= f.text_field :item_id, required: true %>
-  </div>
-  <%= f.label :amount, "Quantidade" %>
-  <div id="black-font">
-    <%= f.text_field :amount, required: true %>
-  </div> <br>
-  <%= f.submit "OK", class: "buttonverde" %>
-
-  <%= link_to "Voltar para clientes", my_open_bills_place_bills_path(@bill.place), class: "buttonverde" %>
-
+    <%= form_tag create_multiple_bill_orders_path do %>
+  <table>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @items.each do |item|%>
+        <tr>
+          <td><%= item.product %><%= hidden_field_tag :item_id, item.id, name: "items[][item_id]" %></td>
+          <td id="black-font"><%= text_field_tag :amount, "", name: "items[][amount]" %></td>
+        <tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= submit_tag "Submit" %>
 <% end %>
