@@ -35,7 +35,9 @@ class OrdersController < ApplicationController
       @order = Order.new(order_params.permit!)
       @order.bill = @bill
       if order_params["amount"].present?
-        @order.save
+        if order_params["amount"].to_i > 0
+          @order.save
+        end
       end
     end
     redirect_to my_open_bills_place_bills_path(@bill.place)
