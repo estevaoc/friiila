@@ -40,7 +40,7 @@
 
   <% if user_signed_in? %>
     <!-- Search -->
-    <% if current_page?(places_path) || current_page?(my_open_bills_place_bills_path) %>
+    <% if current_page?(places_path) %>
       <i class="fa fa-search navbar-wagon-item" onclick="toggleSearchBar()"></i>
     <% end %>
   <% else %>
