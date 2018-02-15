@@ -144,6 +144,7 @@ display:relative;
     font: normal normal normal 14px/1 FontAwesome;
 
     text-rendering: auto;
+    font-size: 100%;
   }
 
 .card-body a {
@@ -231,4 +232,10 @@ table {
 
 #black-font {
   color: black;
+}
+
+.tubarao {
+margin-top: 15%;
+margin-left: 3%;
+margin-right: -3%;
 }
