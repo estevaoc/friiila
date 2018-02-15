@@ -17,5 +17,6 @@
       <% end %>
     </tbody>
   </table>
-  <%= submit_tag "Submit" %>
+  <%= submit_tag "Submit", class: "buttonverde" %>
+  <%= link_to "Voltar para clientes", my_open_bills_place_bills_path(@bill.place), class: "buttonverde" %>
 <% end %>
