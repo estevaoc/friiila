@@ -39,12 +39,10 @@
 
 
   <% if user_signed_in? %>
-    <!-- Search -->
-    <% if current_page?(places_path) %>
-      <i class="fa fa-search navbar-wagon-item" onclick="toggleSearchBar()"></i>
+    <%= link_to :back, class: "fa navbar-wagon-item navbar-wagon-link" do %>
+      <i class="fa fa-undo"></i>
     <% end %>
   <% else %>
-    <!-- Places -->
     <%= link_to "Estabelecimentos", stablish_path, class: "navbar-wagon-item navbar-wagon-link" %>
   <% end %>
 </div>

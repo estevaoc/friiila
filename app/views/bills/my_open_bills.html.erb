@@ -1,6 +1,7 @@
 <h1>Contas abertas no <%= @place.place_name %></h1>
 
 <div class="primeira">
+  <i class="fa fa-search navbar-wagon-item" onclick="toggleSearchBar()"></i>
   <%= form_tag my_open_bills_place_bills_path, method: :get, id: "search", :class => "hidden1"  do %>
     <%= text_field_tag :query,
       params[:query],
@@ -52,5 +53,3 @@
     </div>
   </div>
 <% end %>
-
-<%= link_to "Voltar", my_places_places_path, class: "buttonverde", id: "position" %>
