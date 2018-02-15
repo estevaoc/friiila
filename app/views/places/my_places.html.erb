@@ -1,9 +1,10 @@
 <%= content_for :title, "Friiila - A vida sem fila" %>
 
-<div class= "primeira">
-<a><%= link_to new_place_path do %>
-<div class= "buttonverde">Adicionar estabelecimento</div>
-<% end %>
+<div class="primeira">
+  <%= link_to new_place_path do %>
+    <div class= "buttonverde">Adicionar estabelecimento</div>
+  <% end %>
+</div>
 
 <div class="row">
   <% @my_places.each do |place| %>

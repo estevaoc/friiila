@@ -13,21 +13,3 @@ function toggleSearchBar() {
     x.style.display = "none";
   }
 }
-
-function alertFunction() {
-  var value = confirm("Pode abrir a conta?");
-    if (value == true)
-  {
-    alert("Conta criada!");
-    return true;
-  }
-  else
-  {
-    alert("Conta nao criada!");
-    return false;
-  }
-}
-
-function paidFunction() {
-  var value = alert("Conta paga! Voce esta friiila!");
-}
