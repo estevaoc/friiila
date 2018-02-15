@@ -1,8 +1,9 @@
 <%= content_for :title, "Friiila - A vida sem fila" %>
 
 <div class="primeira">
-  <%= link_to new_place_path do %>
-    <div class= "buttonverde">Adicionar estabelecimento</div>
+  <%= link_to new_place_path, class: "fa navbar-wagon-link" do %>
+    <i class="fa fa-plus-square"></i>
+    <!-- <div class= "buttonverde">Adicionar estabelecimento</div> -->
   <% end %>
 </div>
 
@@ -19,14 +20,12 @@
         </div>
     <%end%>
         <div class="card-footer ">
-             <%= link_to place_path(place), method: :delete, data: { confirm: "Que isso, tem certeza?" } do %>
-        <i class="fa fa-trash-o"></i>
-        <a><%= link_to edit_place_path(place) do %>
-           <i class="fa fa-edit"></i>
-        </a>
-        </p>
-        <% end %>
-        <% end %>
+          <%= link_to place_path(place), method: :delete, data: { confirm: "Que isso, tem certeza?" }, class: "fa navbar-wagon-link" do %>
+            <i class="fa fa-trash-o"></i>
+          <% end %>
+          <%= link_to edit_place_path(place), class: "fa navbar-wagon-link" do %>
+             <i class="fa fa-edit"></i>
+          <% end %>
         </div>
       </div>
   </div>
