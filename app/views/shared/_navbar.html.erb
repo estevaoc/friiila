@@ -37,10 +37,14 @@
     <%= image_tag "frilapreta.jpg", height: 50 %>
   <% end %>
 
-  <!-- Search -->
+
   <% if user_signed_in? %>
-    <i class="fa fa-search navbar-wagon-item" onclick="toggleSearchBar()"></i>
-    <% else %>
+    <!-- Search -->
+    <% if current_page?(places_path) || current_page?(my_open_bills_place_bills_path) %>
+      <i class="fa fa-search navbar-wagon-item" onclick="toggleSearchBar()"></i>
+    <% end %>
+  <% else %>
+    <!-- Places -->
     <%= link_to "Estabelecimentos", stablish_path, class: "navbar-wagon-item navbar-wagon-link" %>
   <% end %>
 </div>
