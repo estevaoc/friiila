@@ -12,7 +12,7 @@
       <% @items.each do |item|%>
         <tr>
           <td><%= item.product %><%= hidden_field_tag :item_id, item.id, name: "items[][item_id]" %></td>
-          <td><%= text_field_tag :amount, "", name: "items[][amount]" %></td>
+          <td id="black-font"><%= text_field_tag :amount, "", name: "items[][amount]" %></td>
         <tr>
       <% end %>
     </tbody>
