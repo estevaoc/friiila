@@ -3,10 +3,7 @@
   height: 625px;
   max-height: 625px;
 }
-.banner-button {
-  font-weight: bold;
-  font-size: 30px;
-}
+
 .carousel-caption {
   top: 50%;
   transform: translateY(-50%);
@@ -35,9 +32,7 @@
   .carousel-indicators {
     margin-bottom: -4.5px;
   }
-
-  #banner-button {
-    font-size: 15px;
-    width: 20%;
+  .buttonverde {
+    width: 200px;
   }
 }
