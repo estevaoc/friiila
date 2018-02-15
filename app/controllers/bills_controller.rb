@@ -45,7 +45,11 @@ class BillsController < ApplicationController
   end
 
   def my_open_bills #para a budega ver todas suas bills abertas
-    @bills = Bill.where(paid: false, place_id: @place)
+    if params[:query].present?
+      @bills = Bill.search_by_name(params[:query]).where(paid: false, place_id: @place)
+    else
+      @bills = Bill.where(paid: false, place_id: @place)
+    end
   end
 
   def destroy
