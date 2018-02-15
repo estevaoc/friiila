@@ -67,12 +67,22 @@
     border: 1px solid;
 }
 .novopididu {
-    color: white;
+    color: #11b545;
 }
 .novopididu:hover {
-    color: #11b545;
+    color: white;
+    text-decoration: none;
+}
+
+.fechaconta {
+    color: purple;
 
 }
+.fechaconta:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .orderspanda {
   font-size: 16px;
   overflow: auto;
