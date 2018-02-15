@@ -21,7 +21,7 @@
       <div class="carousel-caption banner-caption">
         <h1 class="carousel-title">O futuro é Friiila</h1>
         <h3 class="carousel-text">Tenha autonomia de ir e vir na balada!</h3>
-        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde"%>
+        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde-quero"%>
       </div>
     </div>
     <div class="item">
@@ -29,7 +29,7 @@
       <div class="carousel-caption">
         <h1 class="carousel-title">Sem maquininha</h1>
         <h3 class="carousel-text">Saia da fila e pague a conta com um click!</h3>
-        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde"%>
+        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde-quero"%>
       </div>
     </div>
     <div class="item">
@@ -37,7 +37,7 @@
       <div class="carousel-caption">
         <h1 class="carousel-title">Você no controle da sua conta</h1>
         <h3 class="carousel-text">Acompanhe em tempo real seus pedidos!</h3>
-        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde"%>
+        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde-quero"%>
       </div>
     </div>
     <div class="item">
@@ -45,7 +45,7 @@
       <div class="carousel-caption">
         <h1 class="carousel-title">Compartilhe essa liberdade</h1>
         <h3 class="carousel-text">Sua conta, seu consumo, sem parcial!</h3>
-        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde"%>
+        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde-quero"%>
       </div>
     </div>
     <div class="item">
@@ -53,7 +53,7 @@
       <div class="carousel-caption">
         <h1 class="carousel-title">E tudo isso sem tarifas</h1>
         <h3 class="carousel-text">Baixe agora e seja Friiila!</h3>
-        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde"%>
+        <%= link_to "Quero!", new_user_registration_path, class: "buttonverde-quero"%>
       </div>
     </div>
   </div>
@@ -67,12 +67,26 @@
     <span class="sr-only">Próximo</span>
   </a>
 </div>
-<h3 class="text-center">Comece a usar</h3>
+<h1 class="text-center">Comece a usar</h1>
 <div class="Wrapper">
   <div class"container">
-    <div class="col-md-12 row">
-      <img src="<%= asset_path "iphonegif.gif" %>">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-6 tubarao">
+
+        <h3><i class="fa fa-map-marker"></i> Escolha o lugar </h3>
+        <h3><i class="fa fa-hand-pointer-o"></i> Abra a conta</h3>
+        <h3><i class="fa fa-bullhorn"></i> Avise o garçon que vc é Friiila</h3>
+        <h3><i class="fa fa-tasks"></i> Acompanhe sua conta</h3>
+        <h3><i class="fa fa-money"></i> Pague com um click!</h3>
+      </div>
+
+      <div class="col-md-4">
+        <img src="<%= asset_path "iphonegif.gif" %>" class="img-responsive">
+      </div>
+      <div class="col-md-1"></div>
     </div>
+
   </div>
 </div>
 <div class="footer">
