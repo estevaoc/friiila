@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     collection do
       get 'my_places', to: "places#my_places"
     end
+
     resources :bills, only: [:new, :create, :show, :update] do
 
       member do
@@ -18,6 +19,10 @@ Rails.application.routes.draw do
     end
   end
   resources :bills, only: [:index] do
-    resources :orders
+    resources :orders do
+      collection do
+        post 'create_multiple', to: 'orders#create_multiple'
+      end
+    end
   end
 end

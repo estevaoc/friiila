@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  before_action :set_bill, only: [:index, :new, :create]
+  before_action :set_bill, only: [:index, :new, :create, :create_multiple]
 
   def index #mostra as orders dentro de uma bill especifica
     @orders = Order.where(bill_id: @bill)
@@ -7,6 +7,7 @@ class OrdersController < ApplicationController
 
   def new
     @order = Order.new
+    @items = Item.all
   end
 
   def create
@@ -27,6 +28,17 @@ class OrdersController < ApplicationController
 
   def destroy
     @order.destroy
+  end
+
+  def create_multiple
+    params[:items].each do |order_params|
+      @order = Order.new(order_params.permit!)
+      @order.bill = @bill
+      if order_params["amount"].present?
+        @order.save
+      end
+    end
+    redirect_to my_open_bills_place_bills_path(@bill.place)
   end
 
   private
