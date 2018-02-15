@@ -4,23 +4,23 @@ users_attributes = [
 {user_name: "Estevao", email: "estevaoc@hotmail.com", role: "admin",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518019755/friiila/estevao.jpg"},
 {user_name: "Mateus", email: "mateuspa@gmail.com", role: "manager",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518019755/friiila/mateus.jpg"},
 {user_name: "Renata", email: "asadebarata@gmail.com", role: "user",password:"splift", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518019755/friiila/renata.jpg"},
-{user_name: "Joao Pedro", email: "joaopedro@hotmail.com", role: "admin",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518551973/joao_pedro_fvp2me.jpg"},
-{user_name: "Rafael", email: "rafael@gmail.com", role: "manager",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518551973/rafael_ay5wes.jpg"},
-{user_name: "Junior", email: "junior@gmail.com", role: "user",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518551975/junior_jigjsi.jpg"},
-{user_name: "Flavia", email: "flavia@hotmail.com", role: "admin",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518552324/flavia_w9bnyq.jpg"},
-{user_name: "Salete", email: "salete@gmail.com", role: "manager",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518552324/salete_emjp7p.jpg"},
-{user_name: "Renato", email: "renato@gmail.com", role: "user",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518551972/renato_krvalg.jpg"},
-{user_name: "Flavio", email: "flavio@hotmail.com", role: "admin",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518551972/flavio_hrxpex.jpg"},
+{user_name: "Joao Pedro", email: "joaopedro@hotmail.com", role: "admin",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518711246/joao_pedro_ojwrax.jpg"},
+{user_name: "Rafael", email: "rafael@gmail.com", role: "manager",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518711246/rafael_zkr6xg.jpg"},
+{user_name: "Junior", email: "junior@gmail.com", role: "user",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518711246/junior_vxhfkq.jpg"},
+{user_name: "Flavia", email: "flavia@hotmail.com", role: "admin",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518711245/flavia_clhecb.jpg"},
+{user_name: "Salete", email: "salete@gmail.com", role: "manager",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518711247/salete_wxw6pd.jpg"},
+{user_name: "Renato", email: "renato@gmail.com", role: "user",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518711246/renato_kdlkrz.jpg"},
+{user_name: "Flavio", email: "flavio@hotmail.com", role: "admin",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518711245/flavio_scesxf.jpg"},
 {user_name: "Daniel", email: "daniel@gmail.com", role: "manager",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518553044/daniel1_kgissu.png"},
 {user_name: "Mariana", email: "mariana@gmail.com", role: "user",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518553042/mariana_bzra58.jpg"},
 {user_name: "Fernando", email: "fernando@hotmail.com", role: "admin",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518553042/fernando_ppxolf.jpg"},
 {user_name: "Pedro", email: "pedro@gmail.com", role: "manager",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518553042/pedro_qkvnql.jpg"},
 {user_name: "Andre", email: "andre@gmail.com", role: "user",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518553041/andre_wlrhys.jpg"},
 {user_name: "Tulio", email: "tulio@hotmail.com", role: "admin",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518553043/tulio_clczia.png"},
-{user_name: "Bia", email: "bia@gmail.com", role: "manager",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518552324/bia_vcx2e1.jpg"},
-{user_name: "Leonor", email: "leonor@gmail.com", role: "user",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518552324/leonor_qtnads.jpg"},
-{user_name: "Roberto", email: "roberto@hotmail.com", role: "admin",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518551973/roberto_eennwe.png"},
-{user_name: "Lara", email: "lara@gmail.com", role: "manager",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518552324/lara_mk3ev1.jpg"},
+{user_name: "Bia", email: "bia@gmail.com", role: "manager",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518711245/bia_nwhrpm.jpg"},
+{user_name: "Leonor", email: "leonor@gmail.com", role: "user",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518711246/leonor_d95zrx.jpg"},
+{user_name: "Roberto", email: "roberto@hotmail.com", role: "admin",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518711247/roberto_kciggq.png"},
+{user_name: "Lara", email: "lara@gmail.com", role: "manager",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518711246/lara_uhlv3e.jpg"},
 {user_name: "Ian", email: "ian@gmail.com", role: "user",password:"123456", remote_photo_url:"http://res.cloudinary.com/doui6owsy/image/upload/v1518553043/ian_mzknew.jpg"}
 ]
 
@@ -30,14 +30,14 @@ puts("Users created")
 puts("Creating places")
 
 places_attributes = [
-{place_name: "Jack Rock Bar", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864404/friiila/jack.jpg", address: "Sion, Belo Horizonte", user_id: "1"},
-{place_name: "Paco Pigalle", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864404/friiila/pigalle.jpg", address: "Alto Barroca, Belo Horizonte", user_id: "3"},
-{place_name: "Lord Pub", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864403/friiila/lord.jpg", address: "Gutierrez, Belo Horizonte", user_id: "1"},
-{place_name: "A Obra", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864403/friiila/obra.jpg", address: "Pampulha, Belo Horizonte", user_id: "3"},
-{place_name: "Circus Rock Bar", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864404/friiila/circus.jpg", address: "Uniao, Belo Horizonte", user_id: "1"},
+{place_name: "Woods", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864404/friiila/woods.jpg", address: "Sion, Belo Horizonte", user_id: "1"},
 {place_name: "Chalezinho", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864404/friiila/chalezinho.jpg", address: "Barro Preto, Belo Horizonte", user_id: "2"},
-{place_name: "Woods", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864404/friiila/woods.jpg", address: "Barreiro, Belo Horizonte", user_id: "2"},
-{place_name: "Gilboa", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864403/friiila/gilboa.jpg", address: "Bom Jesus, Belo Horizonte", user_id: "2"}
+{place_name: "Gilboa", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864403/friiila/gilboa.jpg", address: "Bom Jesus, Belo Horizonte", user_id: "2"},
+{place_name: "Lord Pub", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864403/friiila/lord.jpg", address: "Gutierrez, Belo Horizonte", user_id: "1"},
+{place_name: "Jack Rock Bar", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864404/friiila/jack.jpg", address: "Barreiro, Belo Horizonte", user_id: "2"},
+{place_name: "A Obra", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864403/friiila/obra.jpg", address: "Pampulha, Belo Horizonte", user_id: "3"},
+{place_name: "Paco Pigalle", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864404/friiila/pigalle.jpg", address: "Alto Barroca, Belo Horizonte", user_id: "3"},
+{place_name: "Circus Rock Bar", remote_photo_url: "http://res.cloudinary.com/doui6owsy/image/upload/v1517864404/friiila/circus.jpg", address: "Uniao, Belo Horizonte", user_id: "1"}
 ]
 
 Place.create!(places_attributes)
@@ -50,14 +50,14 @@ items_attributes = [
 {product: "Hamubrguer", price: "15", place_id: "1"},
 {product: "Batata Frita", price: "10", place_id: "1"},
 {product: "Long neck", price: "7", place_id: "1"},
-{product: "Cerveja artesanal", price: "15", place_id: "1"},
+{product: "Cerva Artes.", price: "15", place_id: "1"},
 {product: "Vodka dose", price: "20", place_id: "1"},
-{product: "Wisky dose", price: "20", place_id: "1"},
+{product: "Whisky dose", price: "20", place_id: "1"},
 {product: "Energetico", price: "15", place_id: "1"},
 {product: "Margarita", price: "30", place_id: "1"},
 {product: "Pina Colada", price: "32", place_id: "1"},
 {product: "Caipirinha", price: "25", place_id: "1"},
-{product: "Sex on the beach", price: "29", place_id: "1"},
+{product: "Cuba Libre", price: "29", place_id: "1"},
 ]
 
 Item.create!(items_attributes)
