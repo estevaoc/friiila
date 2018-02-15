@@ -15,13 +15,13 @@
             <p>Esperando confirmação de: <%= resource.unconfirmed_email %></p>
           <% end %>
 
-          <%= f.input :password, autocomplete: "off", hint: "deixe em branco caso não queira trocar", required: false, label: "Senha" %>
+          <%= f.input :password, autocomplete: "off", hint: "Deixe em branco caso não queira trocar", required: false, label: "Senha" %>
           <%= f.input :password_confirmation, required: false, label: "Confirmar senha" %>
-          <%= f.input :current_password, hint: "nós precisamos da sua senha atual para confirmar as mudanças", required: true, label: "Senha atual" %>
+          <%= f.input :current_password, hint: "Precisamos da sua senha atual para confirmar as mudanças", required: true, label: "Senha atual" %>
         </div>
 
         <div class="form-actions">
-          <%= f.button :submit, "Atualizar" %>
+          <%= f.button :submit, "Atualizar", class: "buttonverde", id: "formbutton" %>
         </div>
       <% end %>
 
@@ -29,7 +29,7 @@
 
       <p>Não curtiu? <%= link_to "Cancelar minha conta", registration_path(resource_name), data: { confirm: "Você tem certeza?" }, method: :delete %></p>
 
-      <%= link_to "Voltar", :back %>
+      <%= link_to "Voltar", :back, class: "buttonverde", id: "formbutton" %>
     </div>
   </div>
 </div>
