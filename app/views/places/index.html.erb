@@ -15,11 +15,18 @@
 <div class="primeira">
   <div class="container-search">
       <span class="icon"><i class="fa fa-search"></i></span>
-      <input type="search" id="search" placeholder="   nome ou endereço" />
+      <!-- <input type="search" id="search" placeholder="   nome ou endereço" /> -->
+      <%= form_tag places_path, method: :get, id: "search"  do %>
+        <%= text_field_tag :query,
+          params[:query],
+          id: "search",
+          placeholder: "nome ou endereço"
+        %>
+      <% end %>
   </div>
 </div>
 
-<br><br><br>
+<br><br>
 
 <div class="row">
   <% @places.each do |place| %>
