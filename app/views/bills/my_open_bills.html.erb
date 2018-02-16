@@ -1,15 +1,19 @@
 <h1>Contas abertas no <%= @place.place_name %></h1>
 
 <div class="primeira">
-  <i class="fa fa-search navbar-wagon-item" onclick="toggleSearchBar()"></i>
-  <%= form_tag my_open_bills_place_bills_path, method: :get, id: "search", :class => "hidden1"  do %>
-    <%= text_field_tag :query,
-      params[:query],
-      class: "form-control",
-      placeholder: "Nome"
-    %>
-  <% end %>
+  <div class="container-search">
+      <span class="icon"><i class="fa fa-search"></i></span>
+      <%= form_tag my_open_bills_place_bills_path, method: :get, id: "search"  do %>
+        <%= text_field_tag :query,
+          params[:query],
+          id: "search",
+          placeholder: "     nome"
+        %>
+      <% end %>
+  </div>
 </div>
+
+<br><br>
 
 <% @bills.each do |bill| %>
   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 cardpanda">
