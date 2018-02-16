@@ -1,16 +1,25 @@
 
 <%= content_for :title, "Friiila - A vida sem fila" %>
 
-<div class="primeira search">
-  <i class="fa fa-search navbar-wagon-item" onclick="toggleSearchBar()"></i>
-  <%= form_tag places_path, method: :get, id: "search", :class => "hidden1"  do %>
-    <%= text_field_tag :query,
+<!-- <div class="primeira search">
+<i class="fa fa-search navbar-wagon-item" onclick="toggleSearchBar()"></i>
+  <%#= form_tag places_path, method: :get, id: "search", :class => "hidden1"  do %>
+    <%#= text_field_tag :query,
       params[:query],
       class: "form-control",
       placeholder: "nome ou endereço"
     %>
-  <% end %>
+  <%# end %>
+</div> -->
+
+<div class="primeira">
+  <div class="container-search">
+      <span class="icon"><i class="fa fa-search"></i></span>
+      <input type="search" id="search" placeholder="   nome ou endereço" />
+  </div>
 </div>
+
+<br><br><br>
 
 <div class="row">
   <% @places.each do |place| %>
