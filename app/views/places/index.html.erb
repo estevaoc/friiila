@@ -1,7 +1,7 @@
 
 <%= content_for :title, "Friiila - A vida sem fila" %>
 
-<div class="primeira">
+<div class="primeira search">
   <i class="fa fa-search navbar-wagon-item" onclick="toggleSearchBar()"></i>
   <%= form_tag places_path, method: :get, id: "search", :class => "hidden1"  do %>
     <%= text_field_tag :query,
