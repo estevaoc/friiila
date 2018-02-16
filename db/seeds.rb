@@ -47,7 +47,7 @@ puts("Creating items")
 
 items_attributes = [
 {product: "Coca-Cola", price: "5", place_id: "1"},
-{product: "Hamubrguer", price: "15", place_id: "1"},
+{product: "Hamburguer", price: "15", place_id: "1"},
 {product: "Batata Frita", price: "10", place_id: "1"},
 {product: "Long neck", price: "7", place_id: "1"},
 {product: "Cerva Artes.", price: "15", place_id: "1"},

@@ -14,7 +14,7 @@
 <% @bills.each do |bill| %>
   <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 cardpanda">
     <div class="frontpanda">
-      <%= image_tag bill.user.photo, class: "contactpanda"%>
+      <%= image_tag bill.user.photo, class: "contactpanda"%> <br>
       <span class="namepanda"><%= bill.user.user_name %></span>
       <hr>
       <div class="jobpanda">
